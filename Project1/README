@@ -1,0 +1,25 @@
+Ilie David 324CA - 2021
+
+Task1:
+Folosesc 2 contori pentru a merge in plaintext si in key in directii diferite.
+Fac xor la valorile pe care le gasesc in acestea si le pun in ciphertext.
+
+Task2:
+Verific daca anul curent minus anul in care a fost cunoscut o persoana este
+mai mare decat 0, iar in cazul in care nu se intampla pun in vectorul ages
+0. Dupa care, verific daca luna este aceeasi si, daca este, verific daca
+a ziua nasterii este mai mare sau mai mica decat ziua curenta.
+
+Task3:
+Iau elementele din vectorul key la rand si pentru fiecare iau octetul care
+trebuie pus in ciphertext incrementand cu len_cheie pentru a lua elementele
+de pe coloane.
+
+Task4:
+Pentru task-ul asta am folosit stiva pentru a retine unele variabile pentru
+a elibera registri. Caut tagul adresei in vectorul de taguri si daca il
+gasesc retin linia la care l-am gasit si ma duc in cache la linia respectiva
+pentru a lua octetul respectiv. Daca nu gasesc tagul, il pun in vectorul
+de taguri pe linia cu indexul TO_REPLACE, dupa care pun octet cu octet in 
+cache valorile de la adresele rezultate din tagul adresei si la sfarsit
+pun in reg octetul de care aveam nevoie de pe linia TO_REPLACE a cache ului.
